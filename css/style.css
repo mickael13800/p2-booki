@@ -66,14 +66,14 @@ a {
 
 /****** Header ******/
 header {
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 header a {
-    padding-top: 15px;
-    margin-left: 50px;
+  display: flex;
+  padding-top: 15px;
 }
 
 header a:hover {
@@ -82,23 +82,24 @@ header a:hover {
 }
 
 nav {
-    padding-top: 10px;
+    display: flex;
+    gap: 68px;
 }
 
 header img {
-    width: 61.09px;
+    width: 61px;
     height: 19px;
-    padding: 15px 0px 30px 0px;
+    padding: 30px 0px;
 }
 
 /****** Search ******/
 h1 {
     margin-bottom: 0px;
+    margin-top: 30px;
 }
 
 h1 + p {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 form {
@@ -106,7 +107,7 @@ form {
     align-items: center;
     width: 377px;
     height: 49px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 form .fa-solid {
@@ -157,10 +158,16 @@ form button{
     width: 758px;
     height: 50px;
     gap: 15px;
+    margin-bottom: 35px;
 }
 
 .filtres h3 {
-    font-size: 1em;
+    font-size: 18px;
+}
+
+.onglets {
+    display: flex;
+    gap: 15px;
 }
 
 .onglet-filtre {
@@ -169,7 +176,7 @@ form button{
     border-color: #d9d9d9;
     background-color: white;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 16px;
     padding: 4px 19px 4px 19px;
     display: flex;
     justify-content: center;
@@ -192,8 +199,7 @@ form button{
     align-items: center;
     height: 24px;
     gap: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .button-info {
@@ -237,7 +243,7 @@ form button{
     display: flex;
     flex-direction: column;
     margin: 20px;
-    width: 195px;
+    width: 197px;
 }
 
 .hebergements-cards img {
@@ -256,10 +262,12 @@ form button{
 
 .hebergements-cards .card-title {
     margin-top: 10px;
+    margin-bottom: 4px;
 }
 
 .hebergements-cards .card-subtitle {
     margin-bottom: 4px;
+    margin-top: 4px;
 }
 
 /****** Populaires ***********/
@@ -309,19 +317,23 @@ form button{
 
 /****** Activites ******/
 .activites .section-title {
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 35px;
+    padding: 30px;
 }
 
 .activites-card {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
+    justify-content: space-around;
+    padding: 0 30px 30px 30px;
 }
 
 .activites-card .card {
-    width: 297.5px;
+    width: 270px;
     height: 439px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .activites-card img {
@@ -331,21 +343,38 @@ form button{
 
 }
 
+.activites-card h3 {
+    padding-left: 10px;
+}
+
 /****** footer ******/
 .no-bullets{
     list-style-type: none;
-    padding: 0;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 footer{
+    width: 1233px;
+    height: 163px;
     display: flex;
-    justify-content: space-between;
+    justify-content:left;
     background-color: #f2f2f2;
+    gap: 30px;
 
+}
+
+footer h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 5px;
+    font-size: 18px;
 }
 
 .assistance, .a-propos, .nos-hebergements {
     padding: 20px;
+    width: 30%;
 }
 
 .no-bullets li {
@@ -355,7 +384,15 @@ footer{
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media all and (max-width: 1024px) {
+    .filtres {
+        flex-direction: column;
+    }
+
+    .infobar {
+        padding-top: 65px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -386,9 +423,32 @@ footer{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-card {
+        gap: 30px;
+
+    }
+
+    .activites-card .card {
+        width: 190px;
+        height: 270px;
+    }
+
+    .activites-card img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .activites-card h3 {
+        font-size: 1em;
+    }
+
+    footer {
+        width: 924px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media all and (min-width: 320px) and (max-width: 767.98px) {
     /* ... */
 }
