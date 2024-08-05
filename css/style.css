@@ -474,6 +474,11 @@ footer h3 {
     .main-container {
         padding: 0;
     }
+
+    body {
+        margin: 0;
+    }
+
     /******Header******/
     header {
         flex-direction: column;
