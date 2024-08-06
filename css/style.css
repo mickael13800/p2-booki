@@ -195,6 +195,7 @@ form .loupe {
 
 .onglet-filtre:hover {
     background-color: var(--filter-bg-color);
+    cursor: pointer;
 }
 
 .infobar {
