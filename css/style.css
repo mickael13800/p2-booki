@@ -370,6 +370,7 @@ form .loupe {
 .activites-card h3 {
     padding: 20px 19px 20px 19px;
     margin: 0;
+    height: 59px;
     display: flex;
     align-items: center;
 }
@@ -472,15 +473,17 @@ footer h3 {
         height: 270px;
     }
 
-    .activites-card img {
-        max-height: 192px;
-    }
-
     .activites-card h3 {
-        height: 10%;
+        height: 70px;
     }
 }
 
+@media all and (min-width: 768px) and (max-width: 999px) {
+    .main-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 /* Small devices (phones, less than 768px) */
 @media all and (max-width: 767.98px) {
     .main-container {
@@ -631,6 +634,11 @@ footer h3 {
     padding: 0;
     height: 200px;
    }
+
+   .activites-card h3 {
+    height: 59px;
+   }
+   
    /******footer******/
    footer {
     flex-direction: column;
