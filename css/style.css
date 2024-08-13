@@ -367,8 +367,10 @@ form .loupe {
 }
 
 .activites-card h3 {
-    padding: 20px 19px 20px 19px;
-    margin: 0;
+    padding-left: 19px;
+    padding-right: 19px;
+    margin-top: auto;
+    margin-bottom: auto;
     height: 59px;
     display: flex;
     align-items: center;
@@ -474,6 +476,7 @@ footer h3 {
 
     .activites-card img {
         min-height: 200px;
+        height: 200px;
     }
 
     .activites-card h3 {
@@ -571,10 +574,6 @@ footer h3 {
         margin-top: 120px;
     }
 
-    .button-info {
-        width: 30px;
-        height: 27px;
-    }
     /******hebergement et populaire******/
     .hebergements-and-populaires {
         flex-direction: column-reverse;
