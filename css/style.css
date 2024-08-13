@@ -361,7 +361,7 @@ form .loupe {
 
 .activites-card img {
     width: 100%;
-    min-height: 380px;
+    height: 380px;
     border-radius: 20px 20px 0 0;
 
 }
@@ -475,7 +475,6 @@ footer h3 {
     }
 
     .activites-card img {
-        min-height: 200px;
         height: 200px;
     }
 
@@ -638,7 +637,7 @@ footer h3 {
    }
 
    .activites-card img {
-    min-height: 141px;
+    height: 141px;
    }
 
    .activites-card h3 {
